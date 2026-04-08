@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez nos destinations de voyage exceptionnelles">
+    <title>Teranga Voyage </title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- ========================
+         NAVBAR
+         ======================== -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-plane-departure"></i>Teranga Voyage
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <i class="fas fa-user"></i> Connexion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================
+         CAROUSEL
+         ======================== -->
+    <div id="destinationsCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="0" class="active" 
+                    aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="1" 
+                    aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#destinationsCarousel" data-bs-slide-to="2" 
+                    aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1200" 
+                     class="d-block w-100" alt="Voyage exotique" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Évadez-vous vers des Îles Paradisiaques</h2>
+                    <p>Plages de sable blanc, eaux cristallines et détente absolue vous attendent</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200" 
+                     class="d-block w-100" alt="Aventure montagne" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Aventures en Montagne</h2>
+                    <p>Randonnées spectaculaires et paysages à couper le souffle</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200" 
+                     class="d-block w-100" alt="Villes culturelles" style="height: 500px; object-fit: cover;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Découvrez les Villes Culturelles</h2>
+                    <p>Histoire, architecture et gastronomie dans les plus belles villes du monde</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#destinationsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+    </div>
+
+    <!-- ========================
+         OFFRES DE VOYAGE
+         ======================== -->
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Nos Offres de Voyage</h2>
+            
+            <div class="row g-4">
+                
+                <!-- Carte 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1530521954074-e64f6810b32d?w=400" 
+                             class="card-img-top" alt="Grèce">
+                        <div class="card-body">
+                            <h5 class="card-title">Îles Grecques</h5>
+                            <p class="card-text">
+                                <i class="fas fa-clock text-primary"></i> 8 jours / 7 nuits<br>
+                                <i class="fas fa-hotel text-primary"></i> Hôtel 4 étoiles<br>
+                                <i class="fas fa-utensils text-primary"></i> Demi-pension
+                            </p>
+                            <p class="card-price">512.000FCFA</p>
+                            <a href="contact.html" class="btn btn-primary w-100">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=400" 
+                             class="card-img-top" alt="Maldives">
+                        <div class="card-body">
+                            <h5 class="card-title">Maldives Luxe</h5>
+                            <p class="card-text">
+                                <i class="fas fa-clock text-primary"></i> 10 jours / 9 nuits<br>
+                                <i class="fas fa-hotel text-primary"></i> Villa sur pilotis<br>
+                                <i class="fas fa-utensils text-primary"></i> All inclusive
+                            </p>
+                            <p class="card-price">4.625.000FCFA</p>
+                            <a href="contact.html" class="btn btn-primary w-100">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400" 
+                             class="card-img-top" alt="Maroc">
+                        <div class="card-body">
+                            <h5 class="card-title">Circuit Maroc</h5>
+                            <p class="card-text">
+                                <i class="fas fa-clock text-primary"></i> 7 jours / 6 nuits<br>
+                                <i class="fas fa-hotel text-primary"></i> Riads authentiques<br>
+                                <i class="fas fa-utensils text-primary"></i> Pension complète
+                            </p>
+                            <p class="card-price">441.350FCFA</p>
+                            <a href="contact.html" class="btn btn-primary w-100">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?w=400" 
+                             class="card-img-top" alt="Canada">
+                        <div class="card-body">
+                            <h5 class="card-title">Canada Ouest</h5>
+                            <p class="card-text">
+                                <i class="fas fa-clock text-primary"></i> 12 jours / 11 nuits<br>
+                                <i class="fas fa-hotel text-primary"></i> Hôtels 3-4 étoiles<br>
+                                <i class="fas fa-utensils text-primary"></i> Petit-déjeuner
+                            </p>
+                            <p class="card-price">5.234.350FCFA</p>
+                            <a href="contact.html" class="btn btn-primary w-100">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1541417904950-b855846fe074?w=400" 
+                             class="card-img-top" alt="Thaïlande">
+                        <div class="card-body">
+                            <h5 class="card-title">Thaïlande Découverte</h5>
+                            <p class="card-text">
+                                <i class="fas fa-clock text-primary"></i> 14 jours / 13 nuits<br>
+                                <i class="fas fa-hotel text-primary"></i> Hôtels charme<br>
+                                <i class="fas fa-utensils text-primary"></i> Demi-pension
+                            </p>
+                            <p class="card-price">1.000.000FCFA</p>
+                            <a href="contact.html" class="btn btn-primary w-100">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carte 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=400" 
+                             class="card-img-top" alt="New York">
+                        <div class="card-body">
+                            <h5 class="card-title">New York City</h5>
+                            <p class="card-text">
+                                <i class="fas fa-clock text-primary"></i> 5 jours / 4 nuits<br>
+                                <i class="fas fa-hotel text-primary"></i> Hôtel Manhattan<br>
+                                <i class="fas fa-utensils text-primary"></i> Petit-déjeuner
+                            </p>
+                            <p class="card-price">3.500.000FCFA</p>
+                            <a href="contact.html" class="btn btn-primary w-100">Réserver</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         TABLEAU COMPARATIF
+         ======================== -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Comparatif des Destinations</h2>
+            
+            <div class="table-responsive">
+                <table class="table table-striped table-hover table-custom">
+                    <thead>
+                        <tr>
+                            <th>Destination</th>
+                            <th>Durée</th>
+                            <th>Type</th>
+                            <th>Saison idéale</th>
+                            <th>Prix à partir de</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Îles Grecques</strong></td>
+                            <td>7 nuits</td>
+                            <td>Plage & Culture</td>
+                            <td>Mai - Octobre</td>
+                            <td><span class="text-success fw-bold">700.000FCFA</span></td>
+                            <td><a href="contact.html" class="btn btn-sm btn-primary">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Maldives</strong></td>
+                            <td>9 nuits</td>
+                            <td>Luxe & Détente</td>
+                            <td>Novembre - Avril</td>
+                            <td><span class="text-success fw-bold">1.820.000FCFA</span></td>
+                            <td><a href="contact.html" class="btn btn-sm btn-primary">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Circuit Maroc</strong></td>
+                            <td>6 nuits</td>
+                            <td>Culture & Aventure</td>
+                            <td>Mars - Mai, Sept - Nov</td>
+                            <td><span class="text-success fw-bold">2.800.000FCFA</span></td>
+                            <td><a href="contact.html" class="btn btn-sm btn-primary">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Egypte</strong></td>
+                            <td>11 nuits</td>
+                            <td>Nature & Découverte</td>
+                            <td>Juin - Septembre</td>
+                            <td><span class="text-success fw-bold">2.500.000FCFA</span></td>
+                            <td><a href="contact.html" class="btn btn-sm btn-primary">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Thaïlande</strong></td>
+                            <td>13 nuits</td>
+                            <td>Exotique & Culturel</td>
+                            <td>Novembre - Mars</td>
+                            <td><span class="text-success fw-bold">1.500.365FCFA</span></td>
+                            <td><a href="contact.html" class="btn btn-sm btn-primary">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>New York</strong></td>
+                            <td>4 nuits</td>
+                            <td>City Break</td>
+                            <td>Avril - Juin, Sept - Oct</td>
+                            <td><span class="text-success fw-bold">4500.000FCFA</span></td>
+                            <td><a href="contact.html" class="btn btn-sm btn-primary">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Afrique du Sud</strong></td>
+                            <td>10 nuits</td>
+                            <td>Plage & Spiritualité</td>
+                            <td>Avril - Octobre</td>
+                            <td><span class="text-success fw-bold">250.000FCFA</span></td>
+                            <td><a href="contact.html" class="btn btn-sm btn-primary">Réserver</a></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Chine</strong></td>
+                            <td>5 nuits</td>
+                            <td>Luxe & Shopping</td>
+                            <td>Novembre - Mars</td>
+                            <td><span class="text-success fw-bold">2.000.000FCFA</span></td>
+                            <td><a href="contact.html" class="btn btn-sm btn-primary">Réserver</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="alert alert-info mt-4" role="alert">
+                <i class="fas fa-info-circle"></i> <strong>Bon à savoir :</strong> 
+                Tous nos prix incluent le vol aller-retour et l'hébergement. Réservez maintenant et payez en 3 fois sans frais !
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================
+         FOOTER
+         ======================== -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                
+                <!-- À propos -->
+                <div class="col-md-4 mb-4">
+                    <h5><i class="fas fa-plane-departure"></i> Teranga Voyage</h5>
+                    <p>Votre partenaire de confiance pour des voyages inoubliables depuis 2010. 
+                       Nous créons des expériences uniques adaptées à vos envies.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Liens rapides -->
+                <div class="col-md-4 mb-4">
+                    <h5>Liens Rapides</h5>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="destinations.html">Nos Destinations</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="login.html">Espace Client</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="col-md-4 mb-4">
+                    <h5>Contactez-nous</h5>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Avenue cheikh Anta Diop , Dakar,Senegal</li>
+                        <li><i class="fas fa-phone"></i> 33 805 18 80</li>
+                        <li><i class="fas fa-envelope"></i> contact@voyageteranga.sn</li>
+                        <li><i class="fas fa-clock"></i> Lun-Sam: 9h-19h</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026  TerangaVoyage. Tous droits réservés. | 
+                   <a href="#">Mentions légales</a> | 
+                   <a href="#">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
